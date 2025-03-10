@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+numpy
+librosa
+matplotlib
+tensorflow
+jinja2
+python-multipart
+keras
+keras-models
+scikit-learn==1.5.0
+pydantic

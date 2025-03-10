@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.form-container,
+.result-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: #ffd700;
+}
+
+.input-group {
+    margin-bottom: 1.5em;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+select, input[type="file"] {
+    padding: 0.5em;
+    font-size: 1em;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 0.5em;
+}
+
+button {
+    background-color: #ffd700;
+    color: #000000;
+    font-size: 1.2em;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffaf00;
+    transform: scale(1.05);
+}
+
+.result-container p {
+    font-size: 1.5em;
+    color: #ffd700;
+    margin-bottom: 1.5em;
+}
+
+.result-container .button {
+    background-color: #ffd700;
+    color: #000000;
+    padding: 0.7em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.result-container .button:hover {
+    background-color: #ffaf00;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 1em 0;
+    color: #ffd700;
+    font-size: 1em;
+}

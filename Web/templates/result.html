@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de la Predicción</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Resultado de la Predicción</div>
+        </nav>
+    </header>
+    <main>
+        <div class="result-container">
+            <h1>Resultado</h1>
+            <p><strong>Predicción:</strong> {{ prediction }}</p>
+            <p><strong>Probabilidad:</strong> {{ probability }}</p>
+            <a href="/" class="button">Volver a la página principal</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Juan Acosta - Felipe Palacio</p>
+    </footer>
+</body>
+</html>

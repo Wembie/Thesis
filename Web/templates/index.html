@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detección de Voz Patológica</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Detección de Voz Patológica</div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="form-container">
+            <h1>Sube tu archivo de audio</h1>
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <div class="input-group">
+                    <label for="model_type">Selecciona el modelo:</label>
+                    <select name="model_type" id="model_type">
+                        <option value="random_forest">Random Forest</option>
+                        <option value="cnn">Modelo CNN</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="file">Carga un archivo de audio (.wav):</label>
+                    <input type="file" id="file" name="file" accept=".wav">
+                </div>
+                <button type="submit">Predecir</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Juan Acosta - Felipe Palacio</p>
+    </footer>
+</body>
+</html>
